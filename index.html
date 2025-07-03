@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+  <div class="container">
+    <div class="logo">Developer</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+  </div>
+</nav>
+
+<section class="intro" id="home">
+    <h1>Hi, I'm MANOJ</h1>
+    <p>A passionate Web Developer & Designer</p>
+</section>
+
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-image">
+        <img src="manoj.jpg" alt="Your Name">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          Hi! I'm Manoj Srinivas, a passionate UI/UX Developer with a love for creating engaging and user-friendly digital experiences.
+          I specialize in HTML, CSS, JavaScript, and design tools like Figma and Adobe Photoshop. My goal is to build beautiful and intuitive
+          interfaces that delight users.
+        </p>
+        <p>
+          When I'm not designing, you’ll find me exploring new tech trends or sketching ideas for my next creative project.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="education-section">
+  <h2>My Education</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2021 - 2024</div>
+      <div class="timeline-content">
+        <h3>Bachelor of Computer Applications</h3>
+        <p>Andhra University, Visakhapatnam</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2018 - 2020</div>
+      <div class="timeline-content">
+        <h3>Intermediate (MPC)</h3>
+        <p>Chaitanya Junior College, Visakhapatnam</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2017 - 2018</div>
+      <div class="timeline-content">
+        <h3>SSC</h3>
+        <p>PVHS High School, Visakhapatnam</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="skills-section">
+  <h2>My Skills</h2>
+  <div class="skill">
+    <h3>HTML</h3>
+    <div class="skill-bar">
+      <div class="skill-fill html">90%</div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <h3>CSS</h3>
+    <div class="skill-bar">
+      <div class="skill-fill css">85%</div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <h3>JavaScript</h3>
+    <div class="skill-bar">
+      <div class="skill-fill js">75%</div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <h3>WordPress</h3>
+    <div class="skill-bar">
+      <div class="skill-fill wordpress">70%</div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <h3>Bootstrap</h3>
+    <div class="skill-bar">
+      <div class="skill-fill
+  bootstrap">80%</div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <h3>Adobe Illustrator</h3>
+    <div class="skill-bar">
+      <div class="skill-fill illustrator">75%</div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <h3>Adobe Photoshop</h3>
+    <div class="skill-bar">
+      <div class="skill-fill photoshop">80%</div>
+    </div>
+  </div>
+  
+  <div class="skill">
+    <h3>Figma</h3>
+    <div class="skill-bar">
+      <div class="skill-fill figma">80%</div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects-section">
+  <h2>My Projects</h2>
+
+  <div class="filter-buttons">
+    <button onclick="filterProjects('all')">All</button>
+    <button onclick="filterProjects('html-css')">HTML&CSS</button>
+    <!-- <button onclick="filterProjects('css')">CSS</button> -->
+    <button onclick="filterProjects('js')">JavaScript</button>
+    <button onclick="filterProjects('Wordpress')">Wordpress</button>
+    <button onclick="filterProjects('Bootstrap')">Bootstrap</button>
+    <button onclick="filterProjects('Illustrator')">Illustrator</button>
+    <button onclick="filterProjects('Photoshop')">Photoshop</button>
+    <button onclick="filterProjects('Figma')">Figma</button>
+    
+  </div>
+
+  <div class="projects-grid">
+    <!-- HTML Projects -->
+    <div class="project-card html-css show">
+      <a href="https://pavan813-k.github.io/Bday-Inivitaion/" target="_blank">
+        <h3>B'day-Inivitaion</h3>
+        <p>Invitation Card</p>
+      </a>
+    </div>
+
+    <div class="project-card html-css show">
+      <a href="https://pavan813-k.github.io/TMF/" target="_blank">
+        <h3>Online Courses</h3>
+        <p>Online Platform</p>
+      </a>
+    </div>
+
+     <div class="project-card html-css show">
+      <a href="https://pavan813-k.github.io/website/" target="_blank">
+        <h3>Catering Website</h3>
+        <p>Website</p>
+      </a>
+    </div>
+
+
+  
+
+    <!-- JavaScript Projects -->
+    <div class="project-card js show">
+      <a href="https://thelampudimanojsrinivas.github.io/Memory-Game/" target="_blank">
+        <h3>Memory Game</h3>
+        <p>Small in Size, Big in Features.</p>
+      </a>
+    </div>
+
+    <div class="project-card js show">
+      <a href="https://thelampudimanojsrinivas.github.io/StopWatch/" target="_blank">
+        <h3>Stop Watch</h3>
+        <p>Code Smart. Run Fast. JavaScript that Works.</p>
+      </a>
+    </div>
+  
+    <!-- Wordpress Projects -->
+<div class="project-card Wordpress show">
+      <a href="https://example.com/js2" target="_blank">
+        <h3>Wordpress</h3>
+        <p>Calculator</p>
+      </a>
+</div>
+
+<!-- Bootstrap Projects -->
+<div class="project-card Bootstrap show">
+      <a href="https://thelampudimanojsrinivas.github.io/bootstrap/" target="_blank">
+        <h3>Landing Page</h3>
+        <p>Shop Website</p>
+      </a>
+</div>
+
+<!-- illustrator Projects -->
+<div class="project-card Illustrator show">
+      <a href="flyer.jpg" target="_blank">
+        <h3>Illustrator</h3>
+        <p>Flyer</p>
+      </a>
+</div>
+<div class="project-card Illustrator show">
+      <a href="Poster.jpg" target="_blank">
+        <h3>Illustrator</h3>
+        <p>Poster</p>
+      </a>
+</div>
+<!-- photoshop Projects -->
+<div class="project-card Photoshop show">
+      <a href="Ps1.jpg" target="_blank">
+        <h3>Photoshop</h3>
+        <p>Flyer</p>
+      </a>
+</div>
+<div class="project-card Photoshop show">
+      <a href="ps2.jpg" target="_blank">
+        <h3>Photoshop</h3>
+        <p>Poster</p>
+      </a>
+</div>
+
+<!-- Figma Projects -->
+<div class="project-card Figma show">
+      <a href="https://example.com/js2" target="_blank">
+        <h3>figma</h3>
+        <p>Calculator</p>
+      </a>
+</div>
+
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <h2>Contact Me</h2>
+  <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+  <!-- Footer Start -->
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://github.com/thelampudimanojsrinivas" target="_blank" class="icon Github"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=3fc00id" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/tmanojsrinivas" target="_blank" class="icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+
+    </div>
+    <p class="copyright">© 2025 All rights reserved | Your Name</p>
+  </footer>
+  <!-- Footer End -->
+
+</body>
+</html>
+
+
+
+</body>
+</html>
